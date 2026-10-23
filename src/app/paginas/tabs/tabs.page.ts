@@ -1,11 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { Component } from '@angular/core';
 import {
   IonContent,
   IonHeader,
   IonIcon,
   IonLabel,
+  IonTab,
   IonTabBar,
   IonTabButton,
   IonTabs,
@@ -13,17 +12,42 @@ import {
   IonToolbar
 } from '@ionic/angular';
 
+import { addIcons } from 'ionicons';
+import {
+  library,
+  playCircle,
+  radio,
+  search,
+  personOutline,
+  shirtOutline
+} from 'ionicons/icons';
+
 @Component({
   selector: 'app-tabs',
   templateUrl: './tabs.page.html',
   styleUrls: ['./tabs.page.scss'],
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonLabel, IonIcon, IonTabButton, IonTabBar, IonTabs]
+  imports: [
+    IonContent,
+    IonHeader,
+    IonIcon,
+    IonLabel,
+    IonTab,
+    IonTabBar,
+    IonTabButton,
+    IonTabs,
+    IonTitle,
+    IonToolbar
+  ]
 })
-export class TabsPage implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+export class TabsPage {
+  constructor() {
+    addIcons({
+      library,
+      playCircle,
+      radio,
+      search,
+      personOutline,
+      shirtOutline
+    });
   }
-
 }
