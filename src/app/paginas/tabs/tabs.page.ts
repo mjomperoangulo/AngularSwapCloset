@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import {
+  IonButton,
   IonContent,
   IonHeader,
   IonIcon,
-  IonLabel,
+  IonLabel, IonRouterLink, IonRouterOutlet,
   IonTab,
   IonTabBar,
   IonTabButton,
@@ -19,8 +20,9 @@ import {
   radio,
   search,
   personOutline,
-  shirtOutline
+  shirtOutline, bookOutline, pulseOutline, waterOutline
 } from 'ionicons/icons';
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-tabs',
@@ -36,7 +38,11 @@ import {
     IonTabButton,
     IonTabs,
     IonTitle,
-    IonToolbar
+    IonToolbar,
+    IonButton,
+    IonRouterLink,
+    RouterLink,
+    IonRouterOutlet
   ]
 })
 export class TabsPage {
@@ -47,7 +53,10 @@ export class TabsPage {
       radio,
       search,
       personOutline,
-      shirtOutline
+      shirtOutline,
+      pulseOutline,
+      bookOutline,
+      waterOutline,
     });
   }
 }
