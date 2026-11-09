@@ -1,0 +1,105 @@
+
+ion-button {
+  --background: green;
+  --color: #00ff00;
+  width: 90px;
+  height: 30px;
+  font-size: 12px;
+}
+
+/* Buscador y campanita */
+.buscador-container {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  gap: 2px;
+}
+
+.buscador-container ion-searchbar {
+  flex: 1;
+  min-width: 0;
+  width: auto;
+  margin: 15px 0;
+  --background: #eeeeee;
+  --border-radius: 15px;
+  --box-shadow: none;
+  --placeholder-color: #777777;
+  --icon-color: green;
+  --color: #333333;
+}
+
+.buscador-container ion-button {
+  flex: 0 0 50px;
+  width: 50px;
+  height: 50px;
+  --background: transparent;
+  --box-shadow: none;
+  --color: green;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+.buscador-container ion-icon {
+  font-size: 28px;
+}
+/* Filtros */
+.filtros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.filtros ion-button {
+  --background: white;
+  --box-shadow: none;
+  font-size: 11px;
+  height: 32px;
+  --border-radius: 15px;
+}
+
+/* Todo: naranja */
+.todo {
+  --color: orange;
+  --border-color: orange;
+  --border-style: solid;
+  --border-width: 1px;
+}
+
+/* Préstamo: amarillo */
+.prestamo {
+  --color: #d6a500;
+  --border-color: #d6a500;
+  --border-style: solid;
+  --border-width: 1px;
+}
+
+/* Intercambio: verde */
+.intercambio {
+  --color: green;
+  --border-color: green;
+  --border-style: solid;
+  --border-width: 1px;
+}
+
+/* Casual: gris */
+.casual {
+  --color: gray;
+  --border-color: gray;
+  --border-style: solid;
+  --border-width: 1px;
+}
+
+/* Deporte: negro */
+.deporte {
+  --color: black;
+  --border-color: black;
+  --border-style: solid;
+  --border-width: 1px;
+}
+
+/* Fondo de página */
+ion-content {
+  --background: #F4EEDB;
+}

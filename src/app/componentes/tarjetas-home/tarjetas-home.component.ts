@@ -1,23 +1,19 @@
-import { Component, OnInit } from '@angular/core';
-import {home} from "ionicons/icons";
-import {IonCard, IonIcon} from "@ionic/angular";
-import {RouterLink} from "@angular/router";
+import { Component } from '@angular/core';
+import {
+  IonButton,
+  IonCard,
+  IonCardContent,
+  IonCardHeader,
+  IonCardSubtitle,
+  IonCardTitle,
+  IonSearchbar
+} from '@ionic/angular';
 
 @Component({
   selector: 'app-tarjetas-home',
   templateUrl: './tarjetas-home.component.html',
   styleUrls: ['./tarjetas-home.component.scss'],
-  imports: [
-    IonIcon,
-    RouterLink,
-    IonCard
-  ],
+  standalone: true,
+  imports: [IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, IonButton, IonSearchbar],
 })
-export class TarjetasHomeComponent  implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {}
-
-  protected readonly home = home;
-}
+export class TarjetasHomeComponent {}

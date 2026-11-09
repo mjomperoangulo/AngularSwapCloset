@@ -25,6 +25,41 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
+
+/* ── Fuentes (al principio del fichero) ──────── */
+@import '@fontsource/lato/400.css';
+@import '@fontsource/lato/700.css';
+@import '@fontsource/poppins/600.css';
+@import '@fontsource/poppins/700.css';
+/* ... aquí siguen los @import de Ionic que ya estaban ... */
+/* ── Estilos generales de AquaPedia (al final) ── */
+h1, h2, h3, ion-title {
+  font-family: var(--app-fuente-titulos);
+  letter-spacing: -0.01em;
+}
+ion-toolbar {
+  --background: var(--ion-background-color); /* la barra, del color del fondo */
+  --border-width: 0; /* sin línea debajo */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**
  * Ionic Dark Mode
  * -----------------------------------------------------

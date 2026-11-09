@@ -67,6 +67,7 @@ export const routes: Routes = [
     path: '**',
     loadComponent: () =>
       import('./paginas/no-encontrada/no-encontrada.page').then(m => m.NoEncontradaPage)
-  }
+  },
+
 
 ];
