@@ -14,6 +14,6 @@ import {
   templateUrl: './tarjetas-home.component.html',
   styleUrls: ['./tarjetas-home.component.scss'],
   standalone: true,
-  imports: [IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, IonButton, IonSearchbar],
+  imports: [IonCard, IonCardHeader, IonCardTitle, IonButton],
 })
 export class TarjetasHomeComponent {}

@@ -20,7 +20,7 @@ import {notificationsOutline} from "ionicons/icons";
   selector: 'app-home',
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonCard, TarjetasHomeComponent, IonSearchbar, IonButton, IonIcon, IonButtons]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, TarjetasHomeComponent, IonSearchbar, IonButton, IonIcon]
 })
 export class HomePage implements OnInit {
 

@@ -29,17 +29,11 @@ import {RouterLink} from "@angular/router";
   templateUrl: './tabs.page.html',
   styleUrls: ['./tabs.page.scss'],
   imports: [
-    IonContent,
-    IonHeader,
     IonIcon,
     IonLabel,
-    IonTab,
     IonTabBar,
     IonTabButton,
     IonTabs,
-    IonTitle,
-    IonToolbar,
-    IonButton,
     IonRouterLink,
     RouterLink,
     IonRouterOutlet
