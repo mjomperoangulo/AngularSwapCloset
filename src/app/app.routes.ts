@@ -46,6 +46,15 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./paginas/prendas/prendas.page').then(m => m.PrendasPage)
       },
+      {
+        path: 'detalle-prenda',
+        loadComponent: () => import('./paginas/detalle-prenda/detalle-prenda.page').then( m => m.DetallePrendaPage)
+      },
+      {
+        path: 'chat',
+        loadComponent: () =>
+          import('./paginas/chat/chat.page').then(m => m.ChatPage)
+      },
 
       {
         path: '',
@@ -54,6 +63,7 @@ export const routes: Routes = [
       }
     ]
   },
+
 
   // Notificaciones
   {
@@ -68,6 +78,7 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./paginas/no-encontrada/no-encontrada.page').then(m => m.NoEncontradaPage)
   },
+
 
 
 ];

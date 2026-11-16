@@ -1,0 +1,63 @@
+
+<ion-content [fullscreen]="true">
+
+  <!-- Barra superior del móvil -->
+  <div class="barra-movil">
+    <span class="hora">9:41</span>
+
+    <div class="iconos-movil">
+      <ion-icon name="cellular"></ion-icon>
+      <ion-icon name="wifi"></ion-icon>
+      <ion-icon name="battery-full"></ion-icon>
+    </div>
+  </div>
+
+  <!-- Cabecera -->
+  <div class="cabecera-mensajes">
+    <h1>Mensajes</h1>
+  </div>
+
+  <!-- Buscador -->
+  <div class="buscador-mensajes">
+    <ion-searchbar
+      placeholder="Buscar prendas, ropas, tallas..."
+      [(ngModel)]="busqueda"
+      (ionInput)="filtrarMensajes()"
+      showClearButton="never">
+    </ion-searchbar>
+  </div>
+
+  <!-- Lista de conversaciones -->
+  <div class="lista-mensajes">
+
+    <div class="mensaje"
+         *ngFor="let mensaje of mensajesFiltrados"
+         (click)="abrirChat(mensaje)">
+
+      <!-- Foto -->
+      <img [src]="mensaje.imagen" alt="Foto de perfil">
+
+      <!-- Información -->
+      <div class="info-mensaje">
+        <h3>{{ mensaje.nombre }}</h3>
+        <p>{{ mensaje.ultimoMensaje }}</p>
+      </div>
+
+      <!-- Hora y notificaciones -->
+      <div class="info-derecha">
+        <span class="hora-mensaje">{{ mensaje.hora }}</span>
+
+        <span class="notificacion" *ngIf="mensaje.noLeidos > 0">
+          {{ mensaje.noLeidos }}
+        </span>
+      </div>
+
+    </div>
+
+    <p class="sin-mensajes" *ngIf="mensajesFiltrados.length === 0">
+      No se encontraron conversaciones.
+    </p>
+
+  </div>
+
+</ion-content>

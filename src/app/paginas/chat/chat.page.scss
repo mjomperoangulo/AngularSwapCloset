@@ -1,0 +1,140 @@
+
+ion-content {
+  --background: #f5efd9;
+}
+
+/* Barra superior del móvil */
+.barra-movil {
+  height: 35px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #111;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+
+  .iconos-movil {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+  }
+}
+
+/* Título */
+.cabecera-mensajes {
+  padding: 4px 15px 8px;
+
+  h1 {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    font-weight: bold;
+    color: #171717;
+    margin: 0;
+  }
+}
+
+/* Buscador */
+.buscador-mensajes {
+  padding: 0 10px;
+
+  ion-searchbar {
+    --background: #ffffff;
+    --border-radius: 8px;
+    --box-shadow: none;
+    --placeholder-color: #999;
+    --icon-color: #999;
+    --color: #333;
+
+    padding: 0;
+    height: 38px;
+    font-size: 12px;
+  }
+}
+
+/* Lista */
+.lista-mensajes {
+  padding: 8px 13px;
+}
+
+/* Cada conversación */
+.mensaje {
+  display: flex;
+  align-items: center;
+  padding: 10px 2px;
+  gap: 9px;
+  min-height: 66px;
+  cursor: pointer;
+}
+
+/* Fotografía */
+.mensaje img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Nombre y último mensaje */
+.info-mensaje {
+  flex: 1;
+  min-width: 0;
+
+  h3 {
+    font-family: Georgia, serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #222;
+    margin: 0 0 5px;
+  }
+
+  p {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #333;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* Hora y notificación */
+.info-derecha {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  align-self: stretch;
+  padding: 2px 0;
+}
+
+.hora-mensaje {
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  color: #999;
+  white-space: nowrap;
+}
+
+.notificacion {
+  background: #e95342;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sin-mensajes {
+  text-align: center;
+  color: #777;
+  font-size: 13px;
+  margin-top: 30px;
+}

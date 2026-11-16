@@ -7,18 +7,71 @@
 
 <ion-content [fullscreen]="true">
 
+  <!-- Buscador, campanita y perfil -->
+  <div class="iconos-derecha">
 
+    <div class="buscador-container">
+      <ion-searchbar placeholder="Buscar prendas..."></ion-searchbar>
 
-  <!-- Buscador y campanita -->
-  <div class="buscador-container">
+      <ion-button fill="clear" (click)="abrirDevoluciones()">
+        <ion-icon name="notifications-outline"></ion-icon>
+      </ion-button>
+    </div>
 
-    <ion-searchbar placeholder="Buscar prendas..."></ion-searchbar>
-
-    <ion-button fill="clear">
-      <ion-icon name="notifications-outline"></ion-icon>
-    </ion-button>
+    <ion-avatar class="avatar-perfil">
+      <div class="avatar-letra">M</div>
+    </ion-avatar>
 
   </div>
+
+
+  <!-- Popup de próximas devoluciones -->
+  <ion-modal
+    [isOpen]="mostrarDevoluciones"
+    (didDismiss)="cerrarDevoluciones()"
+    cssClass="devoluciones-modal"
+    [backdropDismiss]="true">
+
+    <ng-template>
+
+      <div class="popup-devoluciones">
+
+        <div class="popup-header">
+          <h2>Próximas devoluciones</h2>
+
+          <button class="cerrar-popup" (click)="cerrarDevoluciones()">
+            ×
+          </button>
+        </div>
+
+        <div class="lista-devoluciones">
+
+          <div class="devolucion-card" *ngFor="let prestamo of proximasDevoluciones">
+
+            <img src="assets/icon/camiseta.jpg" alt="Prenda">
+
+            <div class="devolucion-info">
+              <h3>{{ prestamo.nombre }}</h3>
+              <p>Propietario: {{ prestamo.propietario }}</p>
+            </div>
+
+            <span class="dias-restantes">
+              QUEDAN {{ prestamo.dias }} DÍAS
+            </span>
+
+          </div>
+
+        </div>
+
+        <a class="historial" routerLink="/app/historial" (click)="cerrarDevoluciones()">
+          Ver todo mi historial de préstamos
+        </a>
+
+      </div>
+    </ng-template>
+  </ion-modal>
+
+
 
 
   <!-- Filtros -->
@@ -33,7 +86,4 @@
   <!-- Tarjetas -->
   <app-tarjetas-home></app-tarjetas-home>
 
-  <div style="height: 1000px; background: red;">
-    PRUEBA DE SCROLL
-  </div>
 </ion-content>

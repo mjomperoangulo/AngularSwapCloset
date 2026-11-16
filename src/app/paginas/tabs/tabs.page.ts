@@ -20,7 +20,7 @@ import {
   radio,
   search,
   personOutline,
-  shirtOutline, bookOutline, pulseOutline, waterOutline
+  shirtOutline, bookOutline, pulseOutline, waterOutline, chatbubblesOutline
 } from 'ionicons/icons';
 import {RouterLink} from "@angular/router";
 
@@ -36,7 +36,6 @@ import {RouterLink} from "@angular/router";
     IonTabs,
     IonRouterLink,
     RouterLink,
-    IonRouterOutlet
   ]
 })
 export class TabsPage {
@@ -51,6 +50,7 @@ export class TabsPage {
       pulseOutline,
       bookOutline,
       waterOutline,
+      chatbubblesOutline,
     });
   }
 }
