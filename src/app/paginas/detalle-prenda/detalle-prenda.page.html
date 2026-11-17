@@ -1,19 +1,10 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>detalle-prenda</ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">detalle-prenda</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
 
   <div class="imagen-container">
 
-    <img src="assets/icon/camiseta.jpg" alt="Prenda">
+    <img src="assets/icon/sudaderatipo.png" alt="Prenda">
 
     <!-- Flecha para volver -->
     <ion-button class="boton-volver" fill="clear" (click)="volver()">
@@ -28,12 +19,92 @@
   </div>
 
 
+  <div class="informacion-prenda">
+
+    <h1>Sudadera de Leopardo</h1>
+
+    <p class="marca">Marca : Levis</p>
+
+    <div class="etiquetas">
+      <span class="etiqueta">Talla : M</span>
+      <span class="etiqueta">Estado : Bueno</span>
+      <span class="intercambio">Intercambio</span>
+    </div>
+
+    <p class="descripcion">
+      Sudadera de estilo moderno y minimalista,
+      diseñada para ofrecer comodidad y un aspecto
+      urbano. Está confeccionada en un tejido
+      suave, con capucha, bolsillo frontal y un
+      diseño sencillo que facilita su combinación
+      con diferentes estilos.
+    </p>
+
+    <div class="propietario">
+      <ion-avatar class="avatar-perfil">
+        <div class="avatar-letra">P</div>
+      </ion-avatar>
+      <span>Propietario: Alberto Domínguez</span>
+    </div>
+
+  </div>
 
 
 
 
+
+  <ion-footer>
+    <div class="botones-inferiores">
+
+      <ion-button (click)="abrirModal()" class="solicitar">
+        Solicitar Intercambio
+      </ion-button>
+
+      <ion-button fill="clear" class="chat">
+        <ion-icon name="chatbubbles" slot="icon-only"></ion-icon>
+      </ion-button>
+
+    </div>
+  </ion-footer>
+
+
+
+<ion-modal [isOpen]="modalAbierto">
+  <ng-template>
+
+  <ion-content>
+    <div class="contenedor-intercambio">
+
+      <img class="imagen-principal"
+           src="assets/icon/sudaderatipo.png"
+           alt="Prenda">
+
+      <div class="linea-separadora"></div>
+
+      <div class="mis-prendas">
+        <img src="assets/icon/bolso.jpg" alt="bolso">
+        <img src="assets/icon/puma.jpg" alt="bolso">
+        <img src="assets/icon/camiseta.jpg" alt="bolso">
+        <img src="assets/icon/sudaderatipo.png" alt="bolso">
+      </div>
+
+    </div>
+
+    <div class="botones-intercambio">
+      <ion-icon name="checkmark-circle-outline"></ion-icon>
+      <ion-icon
+        name="close-circle-outline"
+        (click)="cerrarModal()">
+      </ion-icon>
+    </div>
+  </ion-content>
+  </ng-template>
+</ion-modal>
 
 
 
 
 </ion-content>
+
+
+

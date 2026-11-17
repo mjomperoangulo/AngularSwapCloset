@@ -5,6 +5,6 @@ import { IonContent, IonInput, IonButton, IonRouterLink } from '@ionic/angular';
   selector: 'app-login',
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
-  imports: [IonContent, IonButton, RouterLink, IonRouterLink],
+  imports: [IonContent, IonButton, RouterLink, IonRouterLink, IonInput],
 })
 export class LoginPage {}

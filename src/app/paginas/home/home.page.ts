@@ -16,13 +16,14 @@ import {
 import {TarjetasHomeComponent} from "../../componentes/tarjetas-home/tarjetas-home.component";
 import {addIcons} from "ionicons";
 import {notificationsOutline} from "ionicons/icons";
+import {RouterLink} from "@angular/router";
 
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, TarjetasHomeComponent, IonButton, IonIcon, IonModal, IonSearchbar, IonAvatar]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, TarjetasHomeComponent, IonButton, IonIcon, IonModal, IonSearchbar, IonAvatar,RouterLink]
 })
 export class HomePage implements OnInit {
 

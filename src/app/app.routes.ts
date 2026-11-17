@@ -78,6 +78,10 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./paginas/no-encontrada/no-encontrada.page').then(m => m.NoEncontradaPage)
   },
+  {
+    path: 'chat-detalle',
+    loadComponent: () => import('./paginas/chat-detalle/chat-detalle.page').then( m => m.ChatDetallePage)
+  },
 
 
 
