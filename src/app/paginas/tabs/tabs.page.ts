@@ -14,13 +14,15 @@ import {
 } from '@ionic/angular';
 
 import { addIcons } from 'ionicons';
+
 import {
   library,
   playCircle,
   radio,
   search,
   personOutline,
-  shirtOutline, bookOutline, pulseOutline, waterOutline, chatbubblesOutline
+  shirtOutline, bookOutline, pulseOutline, waterOutline, chatbubblesOutline, homeOutline, searchOutline,add,
+  chatbubbleOutline
 } from 'ionicons/icons';
 import {RouterLink} from "@angular/router";
 
@@ -34,23 +36,16 @@ import {RouterLink} from "@angular/router";
     IonTabBar,
     IonTabButton,
     IonTabs,
-    IonRouterLink,
-    RouterLink,
   ]
 })
 export class TabsPage {
   constructor() {
     addIcons({
-      library,
-      playCircle,
-      radio,
-      search,
+      homeOutline,
+      searchOutline,
+      chatbubbleOutline,
       personOutline,
-      shirtOutline,
-      pulseOutline,
-      bookOutline,
-      waterOutline,
-      chatbubblesOutline,
+      add
     });
   }
 }
