@@ -31,3 +31,75 @@ ion-item ion-icon[slot="start"] { color: var(--ion-color-medium); margin-inline-
   margin: 0 auto;
   margin-left: 10px;
 }
+
+
+/* Botones de estilos */
+/* Botones de estilo */
+.estilo {
+  --background: white;
+  --color: black;
+  --border-color: black;
+  --border-style: solid;
+  --border-width: 1px;
+}
+
+
+/* Botones de talla y calzado */
+.talla {
+  --background: white;
+  --color: black;
+  --border-color: black;
+  --border-style: solid;
+  --border-width: 1px;
+}
+.estilo.seleccionado {
+  --background: #60734d;
+  --color: white;
+}
+
+/* Talla y calzado */
+.botonesytalla {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 12px;
+}
+
+.talla {
+  --background: white;
+  --color: #222;
+  --border-color: #222;
+  --border-style: solid;
+  --border-width: 1px;
+  --border-radius: 8px;
+  --box-shadow: none;
+
+  height: 34px;
+  margin: 0;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* Inventario */
+.Inventario {
+  --background: #ff7518;
+  --color: white;
+  --border-radius: 8px;
+  --box-shadow: none;
+
+  width: 85%;
+  height: 40px;
+  margin: 20px auto;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+}
+.botones-estilo,
+.botonesytalla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+

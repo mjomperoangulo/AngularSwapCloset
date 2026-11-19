@@ -1,30 +1,22 @@
 import { Component } from '@angular/core';
 import {
-  IonButton,
-  IonContent,
-  IonHeader,
   IonIcon,
-  IonLabel, IonRouterLink, IonRouterOutlet,
-  IonTab,
+  IonLabel,
   IonTabBar,
   IonTabButton,
   IonTabs,
-  IonTitle,
-  IonToolbar
+
 } from '@ionic/angular';
 
 import { addIcons } from 'ionicons';
 
 import {
-  library,
-  playCircle,
-  radio,
-  search,
+
   personOutline,
-  shirtOutline, bookOutline, pulseOutline, waterOutline, chatbubblesOutline, homeOutline, searchOutline,add,
+  homeOutline, searchOutline,add,
   chatbubbleOutline
 } from 'ionicons/icons';
-import {RouterLink} from "@angular/router";
+
 
 @Component({
   selector: 'app-tabs',

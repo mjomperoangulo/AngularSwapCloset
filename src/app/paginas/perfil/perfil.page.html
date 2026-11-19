@@ -9,6 +9,21 @@
       <div><strong>20</strong><span>Prestados</span></div>
     </div>
   </div>
+
+  <div class="botonesytalla">
+    <ion-button class="talla">Talla: M/40</ion-button>
+    <ion-button class="talla">Calzado:45</ion-button>
+  </div>
+
+
+
+  <div class ="botones-estilo">
+    <ion-button class="estilo seleccionado">Casual</ion-button>
+    <ion-button class="estilo">Formal</ion-button>
+    <ion-button class="estilo">Deporte</ion-button>
+  </div>
+
+
   <p class="titulo-grupo">Preferencias</p>
   <ion-list [inset]="true">
     <ion-item>
@@ -25,6 +40,9 @@
     </ion-item>
   </ion-list>
   <ion-list [inset]="true">
+
+    <ion-button class="Inventario">Inventario</ion-button>
+
     <ion-item [button]="true" routerLink="/login" routerDirection="root" class="salir">
       <ion-icon slot="start" name="log-out-outline" color="danger"></ion-icon>
       <ion-label color="danger">Cerrar sesión</ion-label>

@@ -1,0 +1,39 @@
+ion-content {
+  --background: #F4EEDB;
+}
+
+.error-container {
+  --padding-start: 25px;
+  --padding-end: 25px;
+}
+
+.imagen-noencontrada {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 20px auto;
+}
+
+h2 {
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  margin: 10px 0;
+}
+
+p {
+  color: #666;
+  font-size: 15px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+ion-button {
+  --background: #f47724;
+  --color: white;
+  --border-radius: 15px;
+  display: block;
+  margin: 20px auto;
+}

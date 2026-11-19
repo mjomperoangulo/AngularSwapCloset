@@ -23,7 +23,7 @@ import {RouterLink} from "@angular/router";
   selector: 'app-home',
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, TarjetasHomeComponent, IonButton, IonIcon, IonModal, IonSearchbar, IonAvatar,RouterLink]
+  imports: [IonContent,CommonModule, FormsModule, TarjetasHomeComponent, IonButton, IonIcon, IonModal, IonSearchbar, IonAvatar,RouterLink]
 })
 export class HomePage implements OnInit {
 

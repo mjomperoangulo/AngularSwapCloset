@@ -1,13 +1,13 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>no-encontrada</ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">no-encontrada</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="error-container">
+
+    <img src="assets/icon/FotoLogin.png" alt="Foto Login" class="imagen-noencontrada">
+    <h2>Pagina no encontrada</h2>
+    <p>Lo sentimos, no hemos podido encontrar la página que buscas</p>
+
+    <ion-button routerLink = "/app/home">
+      Volver al inicio
+    </ion-button>
+
+
 </ion-content>

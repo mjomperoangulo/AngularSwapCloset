@@ -5,31 +5,36 @@ ion-content {
 
 /* Barra superior del móvil */
 .barra-movil {
-  height: 35px;
-  padding: 0 14px;
+  height: 40px;
+  padding: 0 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: #111;
   font-family: Arial, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
+}
 
-  .iconos-movil {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 15px;
+/* Iconos del móvil */
+.iconos-movil {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  ion-icon {
+    font-size: 19px;
+    color: black;
   }
 }
 
 /* Título */
 .cabecera-mensajes {
-  padding: 4px 15px 8px;
+  padding: 8px 18px 12px;
 
   h1 {
     font-family: Georgia, serif;
-    font-size: 21px;
+    font-size: 27px;
     font-weight: bold;
     color: #171717;
     margin: 0;
@@ -38,43 +43,44 @@ ion-content {
 
 /* Buscador */
 .buscador-mensajes {
-  padding: 0 10px;
+  padding: 0 14px;
 
   ion-searchbar {
     --background: #ffffff;
-    --border-radius: 8px;
+    --border-radius: 10px;
     --box-shadow: none;
     --placeholder-color: #999;
     --icon-color: #999;
     --color: #333;
 
     padding: 0;
-    height: 38px;
-    font-size: 12px;
+    height: 45px;
+    font-size: 14px;
   }
 }
 
 /* Lista */
 .lista-mensajes {
-  padding: 8px 13px;
+  padding: 12px 16px;
 }
 
 /* Cada conversación */
 .mensaje {
   display: flex;
   align-items: center;
-  padding: 10px 2px;
-  gap: 9px;
-  min-height: 66px;
+  padding: 14px 2px;
+  gap: 12px;
+  min-height: 82px;
   cursor: pointer;
 }
 
 /* Fotografía */
 .mensaje img {
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   object-fit: cover;
+  flex-shrink: 0;
 }
 
 /* Nombre y último mensaje */
@@ -84,15 +90,15 @@ ion-content {
 
   h3 {
     font-family: Georgia, serif;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
     color: #222;
-    margin: 0 0 5px;
+    margin: 0 0 6px;
   }
 
   p {
     font-family: Arial, sans-serif;
-    font-size: 11px;
+    font-size: 13px;
     color: #333;
     margin: 0;
     white-space: nowrap;
@@ -108,12 +114,12 @@ ion-content {
   align-items: flex-end;
   justify-content: space-between;
   align-self: stretch;
-  padding: 2px 0;
+  padding: 4px 0;
 }
 
 .hora-mensaje {
   font-family: Arial, sans-serif;
-  font-size: 9px;
+  font-size: 11px;
   color: #999;
   white-space: nowrap;
 }
@@ -122,10 +128,10 @@ ion-content {
   background: #e95342;
   color: white;
   font-family: Arial, sans-serif;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: bold;
-  width: 14px;
-  height: 14px;
+  width: 19px;
+  height: 19px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -135,6 +141,6 @@ ion-content {
 .sin-mensajes {
   text-align: center;
   color: #777;
-  font-size: 13px;
-  margin-top: 30px;
+  font-size: 15px;
+  margin-top: 35px;
 }

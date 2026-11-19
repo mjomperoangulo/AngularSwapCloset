@@ -1,0 +1,98 @@
+
+<ion-content [fullscreen]="true">
+
+  <div class="barra-movil">
+    <span class="hora">9:41</span>
+
+    <div class="iconos-movil">
+      <ion-icon name="cellular"></ion-icon>
+      <ion-icon name="wifi"></ion-icon>
+      <ion-icon name="battery-full"></ion-icon>
+    </div>
+  </div>
+
+
+  <h2><b>Publicar Prenda</b></h2>
+
+  <div>
+    <p class="titulo-prenda">Titulo prenda</p>
+    <ion-input placeholder="Nombre de la prenda"></ion-input>
+  </div>
+
+  <p class="titulo-fotos">Fotos de la prenda (mínimo 2)</p>
+
+  <div class="publicar">
+
+    <div class="foto-anadir" (click)="selectorFotos.click()">
+      <ion-icon name="camera-outline"></ion-icon>
+      <span>Añadir</span>
+    </div>
+    <img src="assets/icon/bolso.jpg" alt="camiseta">
+    <img src="assets/icon/bolso.jpg" alt="bolso">
+
+  </div>
+
+
+  <input
+    #selectorFotos
+    type="file"
+    accept="image/*"
+    multiple
+    hidden
+  >
+
+  <div class="selecciones">
+
+    <div class="campo">
+      <p>Categoría</p>
+
+      <ion-select placeholder="Seleccionar categoria" interface="popover">
+        <ion-select-option value="camisetas">Camisetas</ion-select-option>
+        <ion-select-option value="pantalones">Pantalones</ion-select-option>
+        <ion-select-option value="sudaderas">Sudaderas</ion-select-option>
+        <ion-select-option value="chaquetas">Chaquetas</ion-select-option>
+        <ion-select-option value="calzado">Calzado</ion-select-option>
+        <ion-select-option value="accesorios">Accesorios</ion-select-option>
+
+      </ion-select>
+    </div>
+
+    <div class="campo">
+      <p>Talla</p>
+    <ion-select placeholder="Seleccionar talla" interface="popover">
+      <ion-select-option value="xs">XS</ion-select-option>
+      <ion-select-option value="s">S</ion-select-option>
+      <ion-select-option value="m">M</ion-select-option>
+      <ion-select-option value="l">L</ion-select-option>
+      <ion-select-option value="xl">XL</ion-select-option>
+      <ion-select-option value="unica">Talla única</ion-select-option>
+    </ion-select>
+    </div>
+
+
+  </div>
+
+
+    <p class="titulo-tipo">Tipo de oferta</p>
+    <ion-segment value="intercambio">
+      <ion-segment-button value="intercambio">
+        <ion-label>Intercambio</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="prestamos">
+        <ion-label>Préstamos</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+  <p class="titulo-descripcion">Descripción</p>
+
+  <ion-textarea
+    placeholder="Describe tu prenda..."
+    rows="4">
+  </ion-textarea>
+
+
+  <ion-button expand="block" class="boton-publicar">
+    Publicar prenda
+  </ion-button>
+
+</ion-content>

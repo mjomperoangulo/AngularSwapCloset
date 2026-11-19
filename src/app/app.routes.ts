@@ -55,6 +55,10 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./paginas/chat/chat.page').then(m => m.ChatPage)
       },
+      {
+        path: 'publicar-prenda',
+        loadComponent: () => import('./paginas/publicar-prenda/publicar-prenda.page').then( m => m.PublicarPrendaPage)
+      },
 
       {
         path: '',
@@ -82,6 +86,7 @@ export const routes: Routes = [
     path: 'chat-detalle',
     loadComponent: () => import('./paginas/chat-detalle/chat-detalle.page').then( m => m.ChatDetallePage)
   },
+
 
 
 

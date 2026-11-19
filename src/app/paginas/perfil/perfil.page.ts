@@ -11,7 +11,7 @@ import {
   IonItem,
   IonLabel,
   IonList,
-  IonRouterLink,
+  IonRouterLink, IonSelectOption,
   IonTitle, IonToggle,
   IonToolbar
 } from '@ionic/angular';
@@ -21,7 +21,7 @@ import {RouterLink} from "@angular/router";
   selector: 'app-perfil',
   templateUrl: './perfil.page.html',
   styleUrls: ['./perfil.page.scss'],
-  imports: [IonContent, CommonModule, FormsModule, IonRouterLink, RouterLink, IonList, IonItem, IonLabel, IonIcon, IonToggle]
+  imports: [IonContent, CommonModule, FormsModule, IonRouterLink, RouterLink, IonList, IonItem, IonLabel, IonIcon, IonToggle, IonSelectOption, IonButtons, IonButton]
 })
 export class PerfilPage implements OnInit {
 

@@ -1,7 +1,7 @@
 
 <ion-content [fullscreen]="true">
 
-  <!-- Barra superior del móvil -->
+
   <div class="barra-movil">
     <span class="hora">9:41</span>
 
@@ -12,12 +12,12 @@
     </div>
   </div>
 
-  <!-- Cabecera -->
+
   <div class="cabecera-mensajes">
     <h1>Mensajes</h1>
   </div>
 
-  <!-- Buscador -->
+
   <div class="buscador-mensajes">
     <ion-searchbar
       placeholder="Buscar prendas, ropas, tallas..."
@@ -27,23 +27,23 @@
     </ion-searchbar>
   </div>
 
-  <!-- Lista de conversaciones -->
+
   <div class="lista-mensajes">
 
     <div class="mensaje"
          *ngFor="let mensaje of mensajesFiltrados"
          (click)="abrirChat(mensaje)">
 
-      <!-- Foto -->
+
       <img [src]="mensaje.imagen" alt="Foto de perfil">
 
-      <!-- Información -->
+
       <div class="info-mensaje">
         <h3>{{ mensaje.nombre }}</h3>
         <p>{{ mensaje.ultimoMensaje }}</p>
       </div>
 
-      <!-- Hora y notificaciones -->
+
       <div class="info-derecha">
         <span class="hora-mensaje">{{ mensaje.hora }}</span>
 
