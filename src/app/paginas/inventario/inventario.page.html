@@ -1,5 +1,4 @@
-
-
+<ion-content>
 <h3>Mi inventario</h3>
 <div class="iconos-derecha">
 
@@ -16,6 +15,34 @@
   </ion-avatar>
 
 </div>
+
+  <div class="cantidad-inventario">
+
+    <div class="cuadrados">
+      <span class="numero">6</span>
+      <span class="texto">Prendas</span>
+    </div>
+
+    <div class="cuadrados">
+      <span class="numero-verde">4</span>
+      <span class="texto">Intercambios</span>
+    </div>
+
+    <div class="cuadrados">
+      <span class="numero-naranja">2</span>
+      <span class="texto">Préstamos</span>
+    </div>
+
+
+  </div>
+
+
+
+  <div class="filtros">
+    <ion-button class="prendas">Prendas</ion-button>
+    <ion-button class="intercambio">Intercambio</ion-button>
+    <ion-button class="prestamo">Préstamos</ion-button>
+  </div>
 
 <ion-modal
   [isOpen]="mostrarDevoluciones"
@@ -63,3 +90,4 @@
 </ion-modal>
 
 <app-tarjetas-home></app-tarjetas-home>
+</ion-content>

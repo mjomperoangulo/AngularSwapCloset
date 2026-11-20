@@ -1,0 +1,284 @@
+
+ion-content {
+  --background: #F4EEDB;
+}
+
+.imagen-container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  margin: 0;
+  padding: 0;
+}
+
+.imagen-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.boton-volver,
+.boton-favorito {
+  position: absolute;
+  top: 10px;
+  z-index: 10;
+  --padding-start: 0;
+  --padding-end: 0;
+  --padding-top: 0;
+  --padding-bottom: 0;
+  --color: black;
+  --background: white;
+  --border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  margin: 0;
+}
+
+.boton-volver {
+  left: 10px;
+  font-size: 24px;
+}
+
+.boton-favorito {
+  right: 10px;
+  font-size: 24px;
+}
+
+.informacion-prenda {
+  padding: 0 22px;
+}
+
+.informacion-prenda h1 {
+  font-size: 23px;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  color: black;
+}
+
+.marca {
+  color: #687451;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.etiquetas {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.etiqueta {
+  background: #f7f4f1;
+  border: 1px solid #ded8d2;
+  border-radius: 8px;
+  padding: 3px 9px;
+  font-size: 12px;
+  color: #555;
+}
+
+
+.Prestamo {
+  background: #fff0e5;
+  border: 1px solid #f98632;
+  border-radius: 7px;
+  padding: 4px 9px;
+  font-size: 11px;
+  color: #f98632;
+}
+
+.descripcion {
+  margin-top: 36px;
+  font-size: 14px;
+  color: #95877f;
+  line-height: 16px;
+}
+
+.propietario {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 60px;
+  padding-bottom: 5px;
+}
+
+.propietario img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.propietario span {
+  font-size: 14px;
+  color: black;
+}
+
+.avatar-perfil {
+  width: 70px;
+  height: 70px;
+  background: #5d6d49;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.avatar-letra {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+ion-footer {
+  background: #F4EEDB;
+  box-shadow: none;
+}
+
+.botones-inferiores {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+}
+
+.solicitar {
+  flex: 1;
+  --background: #f98632;
+  --background-hover: #e87525;
+  --color: white;
+  --border-radius: 9px;
+  --box-shadow: none;
+  height: 42px;
+}
+
+.chat {
+  --color: #193d08;
+  font-size: 35px;
+  width: 48px;
+  height: 48px;
+}
+
+/* MODAL DE INTERCAMBIO */
+
+.contenedor-intercambio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+}
+
+.imagen-principal {
+  width: 120px;
+  height: 180px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.linea-separadora {
+  width: 2px;
+  height: 180px;
+  background-color: #ccc;
+  flex-shrink: 0;
+}
+
+.mis-prendas {
+  display: grid;
+  grid-template-columns: repeat(2, 65px);
+  gap: 8px;
+}
+
+.mis-prendas img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.botones-intercambio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.botones-intercambio ion-icon {
+  font-size: 35px;
+}
+
+.contenedor-intercambio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  padding: 25px 10px;
+  box-sizing: border-box;
+}
+
+.imagen-principal {
+  width: 35%;
+  height: 180px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.linea-separadora {
+  width: 2px;
+  height: 180px;
+  background-color: #ccc;
+  flex-shrink: 0;
+}
+
+.mis-prendas {
+  display: grid;
+  grid-template-columns: repeat(2, 65px);
+  gap: 8px;
+}
+
+.mis-prendas img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.fechas-prestamo {
+  padding: 0 15px;
+  margin-top: 20px;
+}
+
+.fechas-prestamo h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.campos-fecha {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.fecha-input {
+  flex: 1;
+  min-width: 0;
+  height: 42px;
+
+  background: white;
+  border: 1px solid #ded8d2;
+  border-radius: 10px;
+
+  --padding-start: 10px;
+  --padding-end: 10px;
+  --color: #555;
+  font-size: 12px;
+}
+
+

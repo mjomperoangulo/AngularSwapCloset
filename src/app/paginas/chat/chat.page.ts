@@ -4,16 +4,18 @@ import { FormsModule } from '@angular/forms';
 import {IonContent, IonHeader, IonIcon, IonSearchbar, IonTitle, IonToolbar} from '@ionic/angular';
 import { addIcons } from 'ionicons';
 import { cellular, wifi, batteryFull } from 'ionicons/icons';
+import { Mensajes } from '../../modelos/mensajes';
+import {RouterLink} from "@angular/router";
 @Component({
   selector: 'app-chat',
   templateUrl: './chat.page.html',
   styleUrls: ['./chat.page.scss'],
-  imports: [IonContent, CommonModule, FormsModule, IonIcon, IonSearchbar]
+  imports: [IonContent, CommonModule, FormsModule, IonIcon, IonSearchbar, RouterLink]
 
 })
 export class ChatPage implements OnInit {
 
-  mensajes = [
+  mensajes: Mensajes[]=[
     {
       nombre: 'Alberto Dominguez',
       ultimoMensaje: '¿Entonces querrás la sudadera?',
@@ -54,7 +56,7 @@ export class ChatPage implements OnInit {
     );
   }
 
-  abrirChat(mensaje: any) {
+  abrirChat(mensaje:Mensajes) {
     console.log('Abrir conversación con:', mensaje.nombre);
   }
 

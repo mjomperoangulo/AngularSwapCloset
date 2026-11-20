@@ -31,7 +31,7 @@
   <div class="lista-mensajes">
 
     <div class="mensaje"
-         *ngFor="let mensaje of mensajesFiltrados"
+         *ngFor="let mensaje of mensajesFiltrados" routerLink="/app/chat-detalle"
          (click)="abrirChat(mensaje)">
 
 
@@ -53,10 +53,6 @@
       </div>
 
     </div>
-
-    <p class="sin-mensajes" *ngIf="mensajesFiltrados.length === 0">
-      No se encontraron conversaciones.
-    </p>
 
   </div>
 

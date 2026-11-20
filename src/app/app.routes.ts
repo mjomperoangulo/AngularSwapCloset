@@ -63,6 +63,14 @@ export const routes: Routes = [
         path: 'inventario',
         loadComponent: () => import('./paginas/inventario/inventario.page').then( m => m.InventarioPage)
       },
+      {
+        path: 'detalle-prendaprestamo',
+        loadComponent: () => import('./paginas/detalle-prendaprestamo/detalle-prendaprestamo.page').then( m => m.DetallePrendaprestamoPage)
+      },
+      {
+        path: 'chat-detalle',
+        loadComponent: () => import('./paginas/chat-detalle/chat-detalle.page').then( m => m.ChatDetallePage)
+      },
 
       {
         path: '',
@@ -86,10 +94,9 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./paginas/no-encontrada/no-encontrada.page').then(m => m.NoEncontradaPage)
   },
-  {
-    path: 'chat-detalle',
-    loadComponent: () => import('./paginas/chat-detalle/chat-detalle.page').then( m => m.ChatDetallePage)
-  },
+
+
+
 
 
 

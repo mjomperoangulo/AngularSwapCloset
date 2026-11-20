@@ -1,0 +1,79 @@
+
+<ion-content [fullscreen]="true">
+
+
+  <div class="imagen-container">
+
+    <img src="assets/icon/Prestamoimagenmejorcalidad.png" alt="Prenda">
+
+    <!-- Flecha para volver -->
+    <ion-button class="boton-volver" fill="clear" (click)="volver()">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-button>
+
+    <!-- Corazón de favoritos -->
+    <ion-button class="boton-favorito" fill="clear">
+      <ion-icon name="heart-outline"></ion-icon>
+    </ion-button>
+
+  </div>
+
+
+  <div class="informacion-prenda">
+
+    <h1>Sudadera de Leopardo</h1>
+
+    <p class="marca">Marca : Puma</p>
+
+    <div class="etiquetas">
+      <span class="etiqueta">Talla : L</span>
+      <span class="etiqueta">Estado : Usado</span>
+      <span class="Prestamo">Prestamo</span>
+    </div>
+
+    <p class="descripcion">Conjunto Puma compuesto por camisa y chándal, ideal para un look deportivo, cómodo y moderno. Perfecto tanto para entrenar como para el día a día.</p>
+
+    <div class="propietario">
+      <ion-avatar class="avatar-perfil">
+        <div class="avatar-letra">L</div>
+      </ion-avatar>
+      <span>Propietaria: Laura Diaz</span>
+    </div>
+
+  </div>
+
+  <div class="fechas-prestamo">
+
+    <h3>Fechas de Préstamo</h3>
+
+    <div class="campos-fecha">
+
+      <ion-input type="date" class="fecha-input"></ion-input>
+
+      <ion-input type="date" class="fecha-input"></ion-input>
+    </div>
+  </div>
+
+
+
+  <ion-footer>
+    <div class="botones-inferiores">
+
+      <ion-button (click)="abrirModal()" class="solicitar">
+        Solicitar Prestamo
+      </ion-button>
+
+      <ion-button fill="clear" class="chat">
+        <ion-icon name="chatbubbles" slot="icon-only"></ion-icon>
+      </ion-button>
+
+    </div>
+  </ion-footer>
+
+
+
+
+</ion-content>
+
+
+

@@ -1,56 +1,19 @@
+
+
 <div class="contenedor-tarjetas">
 
-  <ion-card routerLink="/app/detalle-prenda">
-    <img src="assets/icon/camiseta.jpg" alt="Sudadera negra" />
-    <ion-card-header>
-      <ion-card-title>Sudadera de Leopardo</ion-card-title>
-      <ion-button>Intercambio</ion-button>
-    </ion-card-header>
-  </ion-card>
+  @for (tarjeta of tarjetas; track tarjeta.id; let i = $index) {
 
-  <ion-card>
-    <img src="assets/icon/camiseta.jpg" alt="Sudadera negra" />
-    <ion-card-header>
-      <ion-card-title>Conjunto Camisa + Chandal Puma</ion-card-title>
-      <ion-button class="prestamo">Préstamo</ion-button>
-    </ion-card-header>
-  </ion-card>
+    <ion-card class="entrada" [style.--orden]="i"  [routerLink]="tarjeta.ruta">
 
+      <img [src] = "tarjeta.imagen" [alt]="tarjeta.nombre"/>
 
-  <ion-card>
-    <img src="assets/icon/camiseta.jpg" alt="Sudadera negra" />
-    <ion-card-header>
-      <ion-card-title>Sudadera de Leopardo</ion-card-title>
-      <ion-button>Intercambio</ion-button>
-    </ion-card-header>
-  </ion-card>
+      <ion-card-header>
+        <ion-card-title>{{tarjeta.nombre}}</ion-card-title>
+        <ion-button>{{tarjeta.tipo}}</ion-button>
+      </ion-card-header>
+    </ion-card>
 
-
-  <ion-card>
-    <img src="assets/icon/bolso.jpg" alt="Bolso de marca" />
-    <ion-card-header>
-      <ion-card-title>Bolso de marca</ion-card-title>
-      <ion-button class="prestamo">Préstamo</ion-button>
-    </ion-card-header>
-  </ion-card>
-
-
-  <ion-card>
-
-    <img src="assets/icon/camiseta.jpg" alt="Sudadera negra" />
-    <ion-card-header>
-      <ion-card-title>Sudadera de Leopardo</ion-card-title>
-      <ion-button class="prestamo">Préstamo</ion-button>
-    </ion-card-header>
-  </ion-card>
-
-
-  <ion-card>
-    <img src="assets/icon/camiseta.jpg" alt="Sudadera negra" />
-    <ion-card-header>
-      <ion-card-title>Sudadera de Leopardo</ion-card-title>
-      <ion-button>Intercambio</ion-button>
-    </ion-card-header>
-  </ion-card>
+  }
 
 </div>

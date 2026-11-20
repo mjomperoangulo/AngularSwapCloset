@@ -1,8 +1,10 @@
 
+/* Fondo general */
 ion-content {
   --background: #F4EEDB;
 }
 
+/* Título */
 h3 {
   margin: 20px 16px;
   font-size: 23px;
@@ -10,70 +12,96 @@ h3 {
   color: #222;
 }
 
+/* Cabecera: buscador, campanita y avatar */
 .iconos-derecha {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 16px;
+  padding: 0 10px;
+  gap: 5px;
 }
 
 .buscador-container {
   display: flex;
   align-items: center;
   flex: 1;
-  gap: 8px;
+  min-width: 0;
+  gap: 2px;
 }
 
-ion-searchbar {
-  --background: white;
-  --border-radius: 12px;
-  --box-shadow: none;
-  --color: #222;
-  --placeholder-color: #888;
-  padding: 0;
+.buscador-container ion-searchbar {
   flex: 1;
+  min-width: 0;
+  width: auto;
+  margin: 15px 0;
+  padding: 0;
+  --background: #eeeeee;
+  --border-radius: 15px;
+  --box-shadow: none;
+  --placeholder-color: #777777;
+  --icon-color: green;
+  --color: #333333;
 }
 
+/* Campanita verde */
 .buscador-container ion-button {
-  --color: #222;
+  flex: 0 0 40px;
+  width: 40px;
+  height: 50px;
   margin: 0;
+  --background: transparent;
+  --box-shadow: none;
+  --color: green;
+  --padding-start: 0;
+  --padding-end: 0;
 }
 
+.buscador-container ion-icon {
+  font-size: 28px;
+}
+
+/* Avatar gris */
 .avatar-perfil {
-  width: 40px;
-  height: 40px;
-  background: #D8CBB0;
-  margin-left: 12px;
+  flex: 0 0 38px;
+  width: 38px;
+  height: 38px;
+  margin: 0;
   cursor: pointer;
+  background: #d9d9d9;
 }
 
 .avatar-letra {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #d9d9d9;
+  color: #666666;
+  font-size: 20px;
   font-weight: bold;
-  font-size: 18px;
-  color: #333;
 }
 
 /* MODAL DEVOLUCIONES */
-
-.devoluciones-modal {
-  --width: 90%;
-  --max-width: 420px;
-  --height: auto;
+ion-modal.devoluciones-modal {
+  --width: calc(100% - 32px);
+  --max-width: 496px;
+  --height: 420px;
   --border-radius: 20px;
+  --background: #f98632;
+  --box-shadow: 0 10px 40px #00000025;
 }
 
+/* Contenido del popup */
 .popup-devoluciones {
-  background: #F4EEDB;
-  padding: 20px;
+  background: #f98632;
+  padding: 16px;
   border-radius: 20px;
   max-height: 75vh;
   overflow-y: auto;
 }
 
+/* Cabecera del popup */
 .popup-header {
   display: flex;
   align-items: center;
@@ -85,17 +113,21 @@ ion-searchbar {
   font-size: 19px;
   font-weight: 700;
   margin: 0;
-  color: #222;
+  color: white;
 }
 
 .cerrar-popup {
   border: none;
-  background: transparent;
+  background: white;
+  border-radius: 15px;
+  width: 48px;
+  height: 44px;
   font-size: 28px;
-  color: #333;
+  color: #f47724;
   cursor: pointer;
 }
 
+/* Lista de devoluciones */
 .lista-devoluciones {
   display: flex;
   flex-direction: column;
@@ -127,6 +159,7 @@ ion-searchbar {
   font-size: 14px;
   font-weight: 700;
   margin: 0 0 5px;
+  color: #222;
 }
 
 .devolucion-info p {
@@ -135,6 +168,7 @@ ion-searchbar {
   margin: 0;
 }
 
+/* Días restantes */
 .dias-restantes {
   font-size: 10px;
   font-weight: 700;
@@ -142,11 +176,151 @@ ion-searchbar {
   white-space: nowrap;
 }
 
+/* Historial */
 .historial {
   display: block;
   text-align: center;
   margin-top: 20px;
-  color: #333;
+  color: white;
   font-size: 13px;
   text-decoration: underline;
+}
+
+.cantidad-inventario {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px;
+}
+
+.cuadrados {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.numero {
+  font-size: 25px;
+  font-weight: bold;
+  color: #222;
+}
+
+.texto {
+  font-size: 13px;
+  color: #777;
+}
+
+
+.numero-verde {
+  font-size: 25px;
+  font-weight: bold;
+  color: green;
+}
+
+.numero-naranja {
+  font-size: 25px;
+  font-weight: bold;
+  color: #f98632;
+}
+
+/* Cuadrados de estadísticas */
+.cantidad-inventario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 10px;
+}
+
+.cuadrados {
+  width: 105px;
+  height: 105px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Números */
+.numero,
+.numero-verde,
+.numero-naranja {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.numero {
+  color: #222;
+}
+
+.numero-verde {
+  color: green;
+}
+
+.numero-naranja {
+  color: #f98632;
+}
+
+/* Texto */
+.texto {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Centrar botones */
+.filtros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 10px;
+}
+
+/* Botón prendas: negro */
+.filtros .prendas {
+  --background: black;
+  --color: white;
+  --border-color: black;
+  --border-style: solid;
+  --border-width: 1px;
+}
+
+/* Botón intercambio: verde */
+.filtros .intercambio {
+  --background: white;
+  --color: green;
+  --border-color: green;
+  --border-style: solid;
+  --border-width: 1px;
+}
+
+/* Botón préstamos: naranja */
+.filtros .prestamo {
+  --background: white;
+  --color: #f98632;
+  --border-color: #f98632;
+  --border-style: solid;
+  --border-width: 1px;
+}
+
+/* Forma de los botones */
+.filtros ion-button {
+  --border-radius: 10px;
+  height: 36px;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
 }
