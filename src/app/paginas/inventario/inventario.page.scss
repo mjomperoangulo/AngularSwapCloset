@@ -1,0 +1,152 @@
+
+ion-content {
+  --background: #F4EEDB;
+}
+
+h3 {
+  margin: 20px 16px;
+  font-size: 23px;
+  font-weight: 700;
+  color: #222;
+}
+
+.iconos-derecha {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.buscador-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 8px;
+}
+
+ion-searchbar {
+  --background: white;
+  --border-radius: 12px;
+  --box-shadow: none;
+  --color: #222;
+  --placeholder-color: #888;
+  padding: 0;
+  flex: 1;
+}
+
+.buscador-container ion-button {
+  --color: #222;
+  margin: 0;
+}
+
+.avatar-perfil {
+  width: 40px;
+  height: 40px;
+  background: #D8CBB0;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.avatar-letra {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+/* MODAL DEVOLUCIONES */
+
+.devoluciones-modal {
+  --width: 90%;
+  --max-width: 420px;
+  --height: auto;
+  --border-radius: 20px;
+}
+
+.popup-devoluciones {
+  background: #F4EEDB;
+  padding: 20px;
+  border-radius: 20px;
+  max-height: 75vh;
+  overflow-y: auto;
+}
+
+.popup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.popup-header h2 {
+  font-size: 19px;
+  font-weight: 700;
+  margin: 0;
+  color: #222;
+}
+
+.cerrar-popup {
+  border: none;
+  background: transparent;
+  font-size: 28px;
+  color: #333;
+  cursor: pointer;
+}
+
+.lista-devoluciones {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.devolucion-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  padding: 10px;
+  border-radius: 14px;
+}
+
+.devolucion-card img {
+  width: 55px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.devolucion-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.devolucion-info h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 5px;
+}
+
+.devolucion-info p {
+  font-size: 12px;
+  color: #777;
+  margin: 0;
+}
+
+.dias-restantes {
+  font-size: 10px;
+  font-weight: 700;
+  color: #A46D35;
+  white-space: nowrap;
+}
+
+.historial {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+  font-size: 13px;
+  text-decoration: underline;
+}

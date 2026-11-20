@@ -59,6 +59,10 @@ export const routes: Routes = [
         path: 'publicar-prenda',
         loadComponent: () => import('./paginas/publicar-prenda/publicar-prenda.page').then( m => m.PublicarPrendaPage)
       },
+      {
+        path: 'inventario',
+        loadComponent: () => import('./paginas/inventario/inventario.page').then( m => m.InventarioPage)
+      },
 
       {
         path: '',
@@ -86,6 +90,7 @@ export const routes: Routes = [
     path: 'chat-detalle',
     loadComponent: () => import('./paginas/chat-detalle/chat-detalle.page').then( m => m.ChatDetallePage)
   },
+
 
 
 

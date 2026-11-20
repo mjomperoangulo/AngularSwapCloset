@@ -17,6 +17,7 @@ import {TarjetasHomeComponent} from "../../componentes/tarjetas-home/tarjetas-ho
 import {addIcons} from "ionicons";
 import {notificationsOutline} from "ionicons/icons";
 import {RouterLink} from "@angular/router";
+import {Devolucion} from "../../modelos/devolucion";
 
 
 @Component({
@@ -32,7 +33,7 @@ export class HomePage implements OnInit {
       'notifications-outline': notificationsOutline
     });
   }
-  proximasDevoluciones = [
+  proximasDevoluciones: Devolucion[] = [
     {
       nombre: 'Zapatos Vans',
       propietario: 'Juan Lopez',
