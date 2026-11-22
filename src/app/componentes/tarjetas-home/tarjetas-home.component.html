@@ -6,11 +6,16 @@
 
     <ion-card class="entrada" [style.--orden]="i"  [routerLink]="tarjeta.ruta">
 
+      <ion-icon name="pencil" class="opciones-card"></ion-icon>
+
       <img [src] = "tarjeta.imagen" [alt]="tarjeta.nombre"/>
 
       <ion-card-header>
         <ion-card-title>{{tarjeta.nombre}}</ion-card-title>
-        <ion-button>{{tarjeta.tipo}}</ion-button>
+        <ion-button
+          [class.prestamo]="tarjeta.tipo === 'Préstamo'"
+          [class.intercambio]="tarjeta.tipo === 'Intercambio'">
+          {{tarjeta.tipo}}</ion-button>
       </ion-card-header>
     </ion-card>
 

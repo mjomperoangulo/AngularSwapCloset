@@ -1,0 +1,148 @@
+ion-content {
+  --background: #F4EEDB;
+}
+
+h2 {
+  font-size: 23px;
+  font-weight: bold;
+  color: #222;
+  margin: 20px 16px;
+}
+
+/* TARJETAS DE COMENTARIOS */
+.comentarios {
+  background: white;
+  border: 1px solid #c9c9c9;
+  border-radius: 14px;
+  padding: 14px;
+  margin: 20px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* FOTO DE PERFIL */
+.comentarios ion-avatar {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #d9d9d9;
+  color: #666;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+/* DATOS DEL USUARIO */
+.datos-usuario {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.datos-usuario h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+  margin: 0;
+}
+
+/* ESTRELLAS */
+.estrellas {
+  margin-left: auto;
+  display: flex;
+  gap: 2px;
+  color: #e6ad23;
+  font-size: 17px;
+}
+
+/* COMENTARIO */
+.datos-usuario p {
+  flex: 0 0 100%;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #444;
+  margin: 5px 0 0;
+}
+
+/* ESTADISTICAS DE REPUTACION */
+.estadisticas-reputacion {
+  background: white;
+  border: 1px solid #c9c9c9;
+  border-radius: 14px;
+  padding: 20px;
+  margin: 15px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* VALORACION */
+.valoracion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+  strong {
+    font-size: 75px;
+    font-weight: bold;
+    color: #222;
+  }
+
+  ion-icon {
+    font-size: 30px;
+    color: #e6ad23;
+  }
+}
+
+/* INTERCAMBIOS COMPLETADOS */
+.intercambios-completados {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  strong {
+    font-size: 16px;
+    font-weight: bold;
+    color: #60734D;
+  }
+
+  span {
+    font-size: 13px;
+    color: #60734D;
+  }
+}
+.cabecera {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 16px;
+}
+
+.cabecera h2 {
+  margin: 0;
+}
+
+.volver {
+  font-size: 25px;
+  color: #222;
+  background: #D0CFC9;
+  border-radius: 50%;
+  padding: 5px;
+  min-width: 27px;
+}

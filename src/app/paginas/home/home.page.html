@@ -27,11 +27,7 @@
 
   </div>
 
-  <ion-modal
-    [isOpen]="mostrarDevoluciones"
-    (didDismiss)="cerrarDevoluciones()"
-    cssClass="devoluciones-modal"
-    [backdropDismiss]="true">
+  <ion-modal [isOpen]="mostrarDevoluciones" (didDismiss)="cerrarDevoluciones()" cssClass="devoluciones-modal" [backdropDismiss]="true">
 
     <ng-template>
 
@@ -40,15 +36,15 @@
         <div class="popup-header">
           <h2>Próximas devoluciones</h2>
 
-          <button class="cerrar-popup" (click)="cerrarDevoluciones()">
-            ×
-          </button>
+          <button class="cerrar-popup" (click)="cerrarDevoluciones()">×</button>
         </div>
 
         <div class="lista-devoluciones">
 
-          <div class="devolucion-card" *ngFor="let prestamo of proximasDevoluciones">
 
+          @for (prestamo of proximasDevoluciones; track prestamo.nombre){
+
+          <div class="devolucion-card">
             <img src="assets/icon/camiseta.jpg" alt="Prenda">
 
             <div class="devolucion-info">
@@ -59,14 +55,12 @@
             <span class="dias-restantes">
               QUEDAN {{ prestamo.dias }} DÍAS
             </span>
-
           </div>
 
+          }
+          <a class="historial" routerLink="/app/historial" (click)="cerrarDevoluciones()">Ver todo mi historial de préstamos</a>
         </div>
 
-        <a class="historial" routerLink="/app/historial" (click)="cerrarDevoluciones()">
-          Ver todo mi historial de préstamos
-        </a>
 
       </div>
     </ng-template>
@@ -75,7 +69,7 @@
 
 
 
-  <!-- Filtros -->
+
   <div class="filtros">
     <ion-button class="todo">Todo</ion-button>
     <ion-button class="prestamo">Préstamo</ion-button>
@@ -84,7 +78,7 @@
     <ion-button class="deporte">Deporte</ion-button>
   </div>
 
-  <!-- Tarjetas componente -->
+
   <app-tarjetas-home></app-tarjetas-home>
 
 </ion-content>

@@ -6,20 +6,20 @@
   padding: 10px;
 }
 
-
-
 ion-card {
   width: 140px;
   margin: 0;
   border-radius: 15px;
-
 }
+
 ion-card-title {
   font-size: 14px;
 }
+
+/* BOTÓN PRÉSTAMO */
 .prestamo {
-  --color: #d6a500;
-  --border-color: #d6a500;
+  --color: #d97706;
+  --border-color: #d97706;
   --border-style: solid;
   --border-width: 1px;
   --border-radius: 15px;
@@ -29,6 +29,21 @@ ion-card-title {
   margin: 0;
   display: block;
 }
+
+/* BOTÓN INTERCAMBIO */
+.intercambio {
+  --color: #388e3c;
+  --border-color: #388e3c;
+  --border-style: solid;
+  --border-width: 1px;
+  --border-radius: 15px;
+  --background: transparent;
+  width: 100px;
+  height: 40px;
+  margin: 0;
+  display: block;
+}
+
 ion-card ion-button {
   --width: 75px;
   --height: 25px;
@@ -36,4 +51,28 @@ ion-card ion-button {
   --padding-end: 5px;
   font-size: 10px;
   min-height: 25px;
+}
+
+/* TARJETAS */
+.entrada {
+  position: relative;
+}
+
+/* ICONO DEL LÁPIZ */
+.opciones-card {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 19px;
+  color: #333;
+  background: white;
+  border-radius: 50%;
+  padding: 8px;
+  z-index: 10;
+}
+ion-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
 }

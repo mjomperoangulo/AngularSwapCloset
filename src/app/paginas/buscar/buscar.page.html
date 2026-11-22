@@ -1,0 +1,28 @@
+
+<ion-content [fullscreen] = "true">
+  <div class="barra-movil">
+    <span class="hora">9:41</span>
+
+    <div class="iconos-movil">
+      <ion-icon name="cellular"></ion-icon>
+      <ion-icon name="wifi"></ion-icon>
+      <ion-icon name="battery-full"></ion-icon>
+    </div>
+  </div>
+
+  <div class="buscador-container">
+    <ion-searchbar placeholder="Buscar prendas..."></ion-searchbar>
+
+    <ion-button fill="clear" (click)="abrirDevoluciones()">
+      <ion-icon name="notifications-outline"></ion-icon>
+    </ion-button>
+
+    <ion-avatar class="avatar-perfil" routerLink="/app/perfil">
+      <div class="avatar-letra">M</div>
+    </ion-avatar>
+  </div>
+
+
+
+</ion-content>
+

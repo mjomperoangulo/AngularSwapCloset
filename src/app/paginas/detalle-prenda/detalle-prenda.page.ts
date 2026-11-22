@@ -20,7 +20,7 @@ import {RouterLink} from "@angular/router";
   selector: 'app-detalle-prenda',
   templateUrl: './detalle-prenda.page.html',
   styleUrls: ['./detalle-prenda.page.scss'],
-  imports: [IonContent, IonHeader, CommonModule, FormsModule, IonButton, IonIcon, IonFooter, IonAvatar, IonModal, IonToolbar]
+  imports: [IonContent, IonHeader, CommonModule, FormsModule, IonButton, IonIcon, IonFooter, IonAvatar, IonModal, IonToolbar,RouterLink]
 })
 export class DetallePrendaPage implements OnInit {
 

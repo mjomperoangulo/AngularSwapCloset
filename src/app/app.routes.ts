@@ -68,9 +68,28 @@ export const routes: Routes = [
         loadComponent: () => import('./paginas/detalle-prendaprestamo/detalle-prendaprestamo.page').then( m => m.DetallePrendaprestamoPage)
       },
       {
-        path: 'chat-detalle',
-        loadComponent: () => import('./paginas/chat-detalle/chat-detalle.page').then( m => m.ChatDetallePage)
+        path: 'buscar',
+        loadComponent: () => import('./paginas/buscar/buscar.page').then( m => m.BuscarPage)
       },
+      {
+        path: 'reputacion',
+        loadComponent: () => import('./paginas/reputacion/reputacion.page').then( m => m.ReputacionPage)
+      },
+      {
+        path: 'valoracion',
+        loadComponent: () => import('./paginas/valoracion/valoracion.page').then( m => m.ValoracionPage)
+      },
+      {
+        path: 'estadisticas',
+        loadComponent: () => import('./paginas/estadisticas/estadisticas.page').then( m => m.EstadisticasPage)
+      },
+      {
+        path: 'missolicitudes',
+        loadComponent: () => import('./paginas/missolicitudes/missolicitudes.page').then( m => m.MissolicitudesPage)
+      },
+
+
+
 
       {
         path: '',
@@ -87,6 +106,14 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./paginas/notificaciones/notificaciones.page').then(m => m.NotificacionesPage)
   },
+  {
+    path: 'chat-detalle',
+    loadComponent: () => import('./paginas/chat-detalle/chat-detalle.page').then( m => m.ChatDetallePage)
+  },
+  {
+    path: 'chat-detalleprestamo',
+    loadComponent: () => import('./paginas/chat-detalleprestamo/chat-detalleprestamo.page').then( m => m.ChatDetalleprestamoPage)
+  },
 
   // Página no encontrada
   {
@@ -94,6 +121,19 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./paginas/no-encontrada/no-encontrada.page').then(m => m.NoEncontradaPage)
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

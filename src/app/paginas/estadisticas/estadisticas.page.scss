@@ -1,0 +1,107 @@
+ion-content {
+  --background: #F4EEDB;
+}
+
+/* CABECERA */
+
+.cabecera {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 16px;
+}
+
+.cabecera h2 {
+  font-size: 23px;
+  font-weight: bold;
+  color: #222;
+  margin: 0;
+}
+
+.volver {
+  font-size: 25px;
+  color: #222;
+  background: #D0CFC9;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+/* ACTIVIDAD MENSUAL */
+
+.titulo-actividad {
+  font-size: 19px;
+  font-weight: bold;
+  margin: 30px 16px 12px;
+  color: #222;
+}
+
+/* SELECTOR DE MES */
+
+.selector-mes {
+  background: white;
+  border-radius: 12px;
+  margin: 0 16px;
+  width: calc(100% - 32px);
+  color: #333;
+  --placeholder-color: #333;
+  --padding-start: 12px;
+}
+
+/* RESUMEN */
+
+.resumen {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 25px 16px 15px;
+}
+
+/* CUADRADOS */
+
+.estadisticas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 10px;
+  padding: 0 16px;
+}
+
+.cuadrado {
+  flex: 1;
+  min-width: 0;
+  height: 90px;
+  background: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 5px;
+}
+
+.cuadrado strong {
+  font-size: 11px;
+  color: #333;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.numero {
+  font-size: 25px;
+  font-weight: bold;
+  color: #333;
+}
+
+.numero-naranja {
+  font-size: 25px;
+  font-weight: bold;
+  color: #d97706;
+}
+
+.numero-verde {
+  font-size: 25px;
+  font-weight: bold;
+  color: #388e3c;
+}

@@ -32,8 +32,9 @@
       <span class="numero-naranja">2</span>
       <span class="texto">Préstamos</span>
     </div>
-
-
+  </div>
+  <div class="enlace-estadisticas" routerLink="/app/estadisticas">
+    Ver estadísticas
   </div>
 
 
@@ -64,20 +65,23 @@
 
       <div class="lista-devoluciones">
 
-        <div class="devolucion-card" *ngFor="let prestamo of proximasDevoluciones">
 
-          <img src="assets/icon/camiseta.jpg" alt="Prenda">
+        @for (prestamo of proximasDevoluciones; track prestamo.nombre) {
+          <div class="devolucion-card">
 
-          <div class="devolucion-info">
-            <h3>{{ prestamo.nombre }}</h3>
-            <p>Propietario: {{ prestamo.propietario }}</p>
-          </div>
+            <img src="assets/icon/camiseta.jpg" alt="Prenda">
 
-          <span class="dias-restantes">
+            <div class="devolucion-info">
+              <h3>{{ prestamo.nombre }}</h3>
+              <p>Propietario: {{ prestamo.propietario }}</p>
+            </div>
+
+            <span class="dias-restantes">
               QUEDAN {{ prestamo.dias }} DÍAS
             </span>
 
-        </div>
+          </div>
+        }
 
       </div>
 

@@ -3,44 +3,99 @@ ion-content {
   --background: #F4EEDB;
 }
 
-.contenido-publicar {
-  padding: 10px 11px;
+/* Barra superior */
+.barra-movil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 5%;
 }
 
-
-.nombre-prenda {
-  --background: transparent;
-  --color: #333;
-  --placeholder-color: #555;
-  --padding-start: 8px;
-  --padding-end: 8px;
-
-  border: 1px solid #777;
-  border-radius: 7px;
-  height: 36px;
-  font-size: 12px;
+.hora {
+  font-size: 14px;
+  color: black;
 }
 
-
-.titulo-fotos {
-  font-size: 11px;
-  color: #333;
-  margin-top: 12px;
-  margin-bottom: 7px;
-}
-
-.contenedor-fotos {
+.iconos-movil {
   display: flex;
   align-items: center;
   gap: 6px;
+
+  ion-icon {
+    font-size: 17px;
+    color: black;
+  }
+}
+
+/* Título */
+h2 {
+  width: 90%;
+  margin: 20px auto 25px;
+  font-size: 22px;
+  text-align: center;
+  color: #222;
+}
+
+/* Contenido general */
+.titulo-prenda,
+.titulo-fotos,
+.titulo-tipo,
+.titulo-descripcion {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+}
+
+/* Nombre de la prenda */
+.titulo-prenda {
+  margin-bottom: 5px;
+}
+
+ion-input {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  border: 1px solid #777;
+  border-radius: 7px;
+  --background: white;
+  --color: #333;
+  --placeholder-color: #777;
+  --padding-start: 10px;
+  font-size: 13px;
+}
+
+/* Fotos */
+.titulo-fotos {
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.publicar {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
+.publicar img,
 .foto-anadir {
-  width: 56px;
-  height: 56px;
-  border: 1px dashed #ff5722;
+  width: 65px;
+  height: 65px;
+  flex-shrink: 0;
   border-radius: 10px;
+}
+
+.publicar img {
+  object-fit: cover;
+}
+
+.foto-anadir {
+  border: 1px dashed #ff5722;
   background: white;
   display: flex;
   flex-direction: column;
@@ -50,271 +105,103 @@ ion-content {
   cursor: pointer;
 
   ion-icon {
-    font-size: 17px;
+    font-size: 20px;
   }
 
   span {
-    font-size: 9px;
+    font-size: 10px;
     margin-top: 3px;
   }
 }
 
-.foto-seleccionada {
-  width: 56px;
-  height: 56px;
-  position: relative;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-}
-
-.eliminar-foto {
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  background: white;
-  color: #e74c3c;
-  border: none;
-  border-radius: 50%;
-  width: 18px;
-  height: 18px;
-  font-size: 15px;
-  line-height: 15px;
-}
-
-
+/* Categoría y talla */
 .selecciones {
+  width: 90%;
+  margin: 20px auto 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 9px;
-  margin-top: 17px;
+  gap: 12px;
+}
+
+.campo {
+  width: 100%;
 }
 
 .campo p {
-  font-size: 11px;
+  font-size: 14px;
   color: #333;
-  margin-bottom: 5px;
+  margin: 0 0 7px;
+  text-align: left;
 }
 
 .campo ion-select {
-  background: white;
-  border-radius: 9px;
-  height: 33px;
   width: 100%;
-  font-size: 10px;
-  color: #777;
+  height: 40px;
+  background: white;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #555;
   --placeholder-color: #777;
   --padding-start: 10px;
   --padding-end: 8px;
 }
 
-
+/* Tipo de oferta */
 .titulo-tipo {
-  font-size: 11px;
-  color: #333;
-  margin-top: 18px;
-  margin-bottom: 7px;
+  margin-top: 22px;
+  margin-bottom: 8px;
 }
 
 ion-segment {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
   --background: transparent;
-  --color: #777;
-  --color-checked: white;
-  --indicator-color: transparent;
 }
 
 ion-segment-button {
+  flex: 1;
+  min-height: 38px;
+  font-size: 12px;
+  --background: white;
   --background-checked: #60734d;
-  --border-radius: 7px;
+  --color: #555;
   --color-checked: white;
-  --color: #777;
-  min-height: 32px;
-  font-size: 10px;
-}
-
-
-.titulo-descripcion {
-  font-size: 12px;
-  color: #333;
-  margin-top: 22px;
-  margin-bottom: 5px;
-}
-
-ion-textarea {
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 7px;
-  --padding-start: 10px;
-  --padding-end: 10px;
-  --padding-top: 8px;
-  font-size: 12px;
-  color: #333;
-}
-
-
-.boton-publicar {
-  --background: #ff7518;
-  --color: white;
-  --border-radius: 7px;
-  --border-color: #333;
-  --border-style: solid;
-  --border-width: 1px;
-
-  width: 85%;
-  height: 38px;
-  font-size: 12px;
-  margin: 35px auto 15px;
-}
-
-
-ion-segment-button {
-  --indicator-color: #08a391;
-}
-
-/* Material Design styles */
-ion-segment-button.md {
-  --color: #000;
-  --color-checked: #08a391;
-  --indicator-height: 4px;
-}
-
-/* iOS styles */
-ion-segment-button.ios {
-  --color: #08a391;
-  --color-checked: #fff;
-  --border-radius: 20px;
-}
-
-
-.publicar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-}
-
-.publicar img,
-.foto-anadir {
-  width: 65px;
-  height: 65px;
-  flex-shrink: 0;
-}
-
-.publicar img {
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-ion-input {
-  width: 90%;
-  margin: 10px auto;
-  border: 1px solid #000;
-  border-radius: 0;
-  padding: 5px;
-}
-
-
-.titulo-prenda,
-.titulo-fotos {
-  font-size: 14px;
-  margin-left: 12px;
-  text-align: left;
-}
-
-.publicar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  margin-left: 12px;
-}
-
-
-/* Centrar el contenido restante */
-.campo {
-  width: 90%;
-  margin: 15px auto;
-}
-
-.campo p,
-.titulo-descripcion {
-  text-align: left;
-  padding-left: 10px;
-}
-
-/* Desplegable */
-.campo ion-select {
-  width: 100%;
+  --border-radius: 8px;
+  --indicator-color: transparent;
 }
 
 /* Descripción */
 .titulo-descripcion {
-  margin-left: 5%;
+  margin-top: 22px;
+  margin-bottom: 8px;
 }
 
 ion-textarea {
   width: 90%;
   margin: 0 auto;
   display: block;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  --padding-start: 10px;
+  --padding-end: 10px;
+  --padding-top: 10px;
+  font-size: 13px;
+  color: #333;
 }
 
 /* Botón publicar */
 .boton-publicar {
   display: block;
   width: 85%;
-  margin: 25px auto;
-}
-
-/* Tipo de oferta */
-ion-segment {
-  width: 90%;
-  margin: 10px auto;
-  display: flex;
-}
-
-ion-segment-button {
-  flex: 1;
-}
-
-.titulo-tipo {
-  width: 90%;
-  margin: 16px auto 4px;
-  text-align: left;
-  padding-left: 2px;
-}
-
-.campo p,
-.titulo-tipo,
-.titulo-descripcion {
-  font-size: 16px;
-}
-
-
-
-.barra-movil {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px 15px;
-}
-
-.iconos-movil {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-
-  ion-icon {
-    font-size: 17px;
-    color: black;
-  }
-}
-
-h2 {
-  font-size: 22px;
-  text-align: center;
-  margin-bottom: 20px;
+  height: 42px;
+  margin: 25px auto 20px;
+  font-size: 13px;
+  --background: #ff7518;
+  --color: white;
+  --border-radius: 8px;
+  --border-color: #333;
+  --border-style: solid;
+  --border-width: 1px;
 }

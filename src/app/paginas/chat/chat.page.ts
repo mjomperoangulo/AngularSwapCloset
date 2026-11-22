@@ -1,21 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import {IonContent, IonHeader, IonIcon, IonSearchbar, IonTitle, IonToolbar} from '@ionic/angular';
+import {IonButton, IonContent, IonHeader, IonIcon, IonSearchbar, IonTitle, IonToolbar} from '@ionic/angular';
 import { addIcons } from 'ionicons';
 import { cellular, wifi, batteryFull } from 'ionicons/icons';
-import { Mensajes } from '../../modelos/mensajes';
+import { Conversaciones } from '../../modelos/conversaciones';
 import {RouterLink} from "@angular/router";
 @Component({
   selector: 'app-chat',
   templateUrl: './chat.page.html',
   styleUrls: ['./chat.page.scss'],
-  imports: [IonContent, CommonModule, FormsModule, IonIcon, IonSearchbar, RouterLink]
+
+  imports: [IonContent, CommonModule, FormsModule, IonIcon, IonSearchbar, RouterLink, IonButton]
 
 })
 export class ChatPage implements OnInit {
 
-  mensajes: Mensajes[]=[
+  conversaciones: Conversaciones[] = [
     {
       nombre: 'Alberto Dominguez',
       ultimoMensaje: '¿Entonces querrás la sudadera?',
@@ -46,18 +47,18 @@ export class ChatPage implements OnInit {
     }
   ];
 
-  mensajesFiltrados = [...this.mensajes];
+  conversacionesFiltradas = [...this.conversaciones];
 
   busqueda: string = '';
 
   filtrarMensajes() {
-    this.mensajesFiltrados = this.mensajes.filter(mensaje =>
+    this.conversacionesFiltradas = this.conversaciones.filter(mensaje =>
       mensaje.nombre.toLowerCase().includes(this.busqueda.toLowerCase())
     );
   }
 
-  abrirChat(mensaje:Mensajes) {
-    console.log('Abrir conversación con:', mensaje.nombre);
+  abrirChat(conversacion:Conversaciones) {
+    console.log('Abrir conversación con:', conversacion.nombre);
   }
 
   constructor() {

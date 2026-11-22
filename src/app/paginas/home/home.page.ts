@@ -15,7 +15,7 @@ import {
 } from '@ionic/angular';
 import {TarjetasHomeComponent} from "../../componentes/tarjetas-home/tarjetas-home.component";
 import {addIcons} from "ionicons";
-import {notificationsOutline} from "ionicons/icons";
+import {batteryFull, cellular, notificationsOutline, wifi} from "ionicons/icons";
 import {RouterLink} from "@angular/router";
 import {Devolucion} from "../../modelos/devolucion";
 
@@ -30,7 +30,10 @@ export class HomePage implements OnInit {
 
   constructor() {
     addIcons({
-      'notifications-outline': notificationsOutline
+      'notifications-outline': notificationsOutline,
+      cellular,
+      wifi,
+      batteryFull
     });
   }
   proximasDevoluciones: Devolucion[] = [

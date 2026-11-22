@@ -11,7 +11,7 @@ import {
 
 } from '@ionic/angular';
 import {addIcons} from "ionicons";
-import {cameraOutline} from "ionicons/icons";
+import {cameraOutline,wifi,cellular,batteryFull} from "ionicons/icons";
 
 @Component({
   selector: 'app-publicar-prenda',
@@ -23,7 +23,10 @@ export class PublicarPrendaPage implements OnInit {
 
   constructor() {
     addIcons({
-      cameraOutline
+      cameraOutline,
+      cellular,
+      wifi,
+      batteryFull
     })
   }
 

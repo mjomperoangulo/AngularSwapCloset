@@ -6,12 +6,11 @@
 
     <img src="assets/icon/sudaderatipo.png" alt="Prenda">
 
-    <!-- Flecha para volver -->
     <ion-button class="boton-volver" fill="clear" (click)="volver()">
       <ion-icon name="arrow-back-outline"></ion-icon>
     </ion-button>
 
-    <!-- Corazón de favoritos -->
+
     <ion-button class="boton-favorito" fill="clear">
       <ion-icon name="heart-outline"></ion-icon>
     </ion-button>
@@ -31,14 +30,7 @@
       <span class="intercambio">Intercambio</span>
     </div>
 
-    <p class="descripcion">
-      Sudadera de estilo moderno y minimalista,
-      diseñada para ofrecer comodidad y un aspecto
-      urbano. Está confeccionada en un tejido
-      suave, con capucha, bolsillo frontal y un
-      diseño sencillo que facilita su combinación
-      con diferentes estilos.
-    </p>
+    <p class="descripcion">Sudadera de estilo moderno y minimalista, diseñada para ofrecer comodidad y un aspecto urbano. Está confeccionada en un tejido suave, con capucha, bolsillo frontal y un diseño sencillo que facilita su combinación con diferentes estilos.</p>
 
     <div class="propietario">
       <ion-avatar class="avatar-perfil">
@@ -60,7 +52,7 @@
         Solicitar Intercambio
       </ion-button>
 
-      <ion-button fill="clear" class="chat">
+      <ion-button fill="clear" class="chat" routerLink="/chat-detalle">
         <ion-icon name="chatbubbles" slot="icon-only"></ion-icon>
       </ion-button>
 
@@ -75,27 +67,22 @@
   <ion-content>
     <div class="contenedor-intercambio">
 
-      <img class="imagen-principal"
-           src="assets/icon/sudaderatipo.png"
-           alt="Prenda">
+      <img class="imagen-principal" src="assets/icon/sudaderatipo.png" alt="Prenda">
 
       <div class="linea-separadora"></div>
 
       <div class="mis-prendas">
-        <img src="assets/icon/bolso.jpg" alt="bolso">
-        <img src="assets/icon/puma.jpg" alt="bolso">
-        <img src="assets/icon/camiseta.jpg" alt="bolso">
-        <img src="assets/icon/sudaderatipo.png" alt="bolso">
+        <img src="assets/icon/bolso.jpg" alt="prenda">
+        <img src="assets/icon/puma.jpg" alt="prenda">
+        <img src="assets/icon/camiseta.jpg" alt="prenda">
+        <img src="assets/icon/imagenintercambio.png" alt="prenda">
       </div>
 
     </div>
 
     <div class="botones-intercambio">
-      <ion-icon name="checkmark-circle-outline"></ion-icon>
-      <ion-icon
-        name="close-circle-outline"
-        (click)="cerrarModal()">
-      </ion-icon>
+      <ion-icon name="checkmark-circle-outline" ></ion-icon>
+      <ion-icon name="close-circle-outline" (click)="cerrarModal()"></ion-icon>
     </div>
   </ion-content>
   </ng-template>

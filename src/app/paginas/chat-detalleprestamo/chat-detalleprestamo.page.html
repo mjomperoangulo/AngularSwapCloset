@@ -1,0 +1,58 @@
+<ion-content [fullscreen]="true">
+  <div class="cabecera-chat">
+
+  <ion-icon name="arrow-back-outline" class="volver" (click)="volver()"></ion-icon>
+
+  <ion-avatar>
+    <div class="avatar">L</div>
+  </ion-avatar>
+
+
+
+
+  <div class="datos-usuario">
+    <h3>Laura Diaz</h3>
+    <p>Activo hace 2 dias</p>
+  </div>
+
+    <ion-icon name="thumbs-up" class="icono-valoracion" routerLink="/app/valoracion"></ion-icon>
+  </div>
+
+
+  <div class="Solicitud">
+    <img src="assets/icon/Prestamoimagen(1).png">
+
+    <div class="datos-solicitud">
+      <p class="titulo-solicitud">Conjunto Camisa + Chandal Puma</p>
+
+
+      <div class="detalles-solicitud">
+        <p>Talla L</p>
+        <ion-button>Prestamo</ion-button>
+      </div>
+
+
+    </div>
+
+    <span class="circulo-tick">✓</span>
+    <span class="circulo-x">✗</span>
+
+  </div>
+
+
+  <p class="fecha-chat">Hace 10 min · 10:10AM</p>
+
+
+
+  <div class="barra-escribir">
+
+    <ion-icon name="camera-outline" class="camara"></ion-icon>
+
+    <input type="text" placeholder="Escribe un mensaje... ">
+
+    <div class="boton-mas" routerLink="/app/reputacion">
+      <ion-icon name="add"></ion-icon>
+    </div>
+
+  </div>
+</ion-content>

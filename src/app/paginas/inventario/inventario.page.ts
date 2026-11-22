@@ -16,6 +16,7 @@ import {RouterLink} from "@angular/router";
 import {TarjetasHomeComponent} from "../../componentes/tarjetas-home/tarjetas-home.component";
 import { Devolucion } from '../../modelos/devolucion';
 import {addIcons} from "ionicons";
+import {notificationsOutline} from "ionicons/icons";
 @Component({
   selector: 'app-inventario',
   templateUrl: './inventario.page.html',
@@ -59,7 +60,7 @@ export class InventarioPage implements OnInit {
 
   constructor() {
     addIcons({
-
+      notificationsOutline
     })
   }
 

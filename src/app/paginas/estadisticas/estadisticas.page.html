@@ -1,0 +1,37 @@
+
+<ion-content [fullscreen]="true">
+  <div class="cabecera">
+    <ion-icon name="arrow-back-outline" class="volver" (click)="volver()"></ion-icon>
+    <h2>Estadisticas</h2>
+  </div>
+
+
+  <h2 class="titulo-actividad">Actividad mensual</h2>
+
+  <ion-select class="selector-mes" value="octubre" interface="popover" placeholder="Seleccionar mes">
+    <ion-select-option value="septiembre">Septiembre 2026</ion-select-option>
+    <ion-select-option value="octubre">Octubre 2026</ion-select-option>
+    <ion-select-option value="noviembre">Noviembre 2026</ion-select-option>
+    <ion-select-option value="diciembre">Diciembre 2026</ion-select-option>
+  </ion-select>
+
+  <p class="resumen">Resumen del mes</p>
+
+  <div class="estadisticas">
+    <div class="cuadrado">
+      <span class="numero">35</span>
+      <strong>Publicaciones</strong>
+    </div>
+
+    <div class="cuadrado">
+      <span class="numero-naranja">20</span>
+      <strong>Prestamos</strong>
+    </div>
+
+    <div class="cuadrado">
+      <span class="numero-verde">12</span>
+      <strong>Intercambios</strong>
+    </div>
+  </div>
+
+</ion-content>

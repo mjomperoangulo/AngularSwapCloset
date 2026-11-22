@@ -15,45 +15,40 @@
 
   <div class="cabecera-mensajes">
     <h1>Mensajes</h1>
+
+    <ion-button class="boton-solicitudes" routerLink="/app/missolicitudes">
+      Mis solicitudes
+    </ion-button>
   </div>
 
 
+
+
   <div class="buscador-mensajes">
-    <ion-searchbar
-      placeholder="Buscar prendas, ropas, tallas..."
-      [(ngModel)]="busqueda"
-      (ionInput)="filtrarMensajes()"
-      showClearButton="never">
-    </ion-searchbar>
+    <ion-searchbar placeholder="Buscar prendas, ropas, tallas..." [(ngModel)]="busqueda" (ionInput)="filtrarMensajes()" showClearButton="never"></ion-searchbar>
   </div>
 
 
   <div class="lista-mensajes">
 
-    <div class="mensaje"
-         *ngFor="let mensaje of mensajesFiltrados" routerLink="/app/chat-detalle"
-         (click)="abrirChat(mensaje)">
-
+    @for( mensaje of conversacionesFiltradas; track mensaje.nombre){
+    <div class="mensaje" [routerLink]="mensaje.nombre === 'Laura Diaz' ? '/chat-detalleprestamo' : '/chat-detalle'">
 
       <img [src]="mensaje.imagen" alt="Foto de perfil">
-
 
       <div class="info-mensaje">
         <h3>{{ mensaje.nombre }}</h3>
         <p>{{ mensaje.ultimoMensaje }}</p>
       </div>
 
-
       <div class="info-derecha">
         <span class="hora-mensaje">{{ mensaje.hora }}</span>
-
-        <span class="notificacion" *ngIf="mensaje.noLeidos > 0">
-          {{ mensaje.noLeidos }}
-        </span>
       </div>
 
     </div>
-
+    }
   </div>
+
+
 
 </ion-content>
