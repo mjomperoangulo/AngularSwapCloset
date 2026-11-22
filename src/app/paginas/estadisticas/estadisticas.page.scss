@@ -105,3 +105,40 @@ ion-content {
   font-weight: bold;
   color: #388e3c;
 }
+
+/* CATEGORÍAS */
+.titulo-categorias {
+  font-size: 19px;
+  font-weight: bold;
+  color: #222;
+  margin: 30px 16px 15px;
+}
+
+.lista-categorias {
+  background: white;
+  margin: 0 16px 20px;
+  padding: 5px 15px;
+  border-radius: 15px;
+}
+
+.categoria {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.categoria:last-child {
+  border-bottom: none;
+}
+
+.categoria span {
+  font-size: 14px;
+  color: #333;
+}
+
+.categoria strong {
+  font-size: 17px;
+  color: #388e3c;
+}

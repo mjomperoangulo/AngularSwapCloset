@@ -87,6 +87,10 @@ export const routes: Routes = [
         path: 'missolicitudes',
         loadComponent: () => import('./paginas/missolicitudes/missolicitudes.page').then( m => m.MissolicitudesPage)
       },
+      {
+        path: 'valoracionesprestamo',
+        loadComponent: () => import('./paginas/valoracionesprestamo/valoracionesprestamo.page').then( m => m.ValoracionesprestamoPage)
+      },
 
 
 
@@ -121,6 +125,8 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./paginas/no-encontrada/no-encontrada.page').then(m => m.NoEncontradaPage)
   },
+
+
 
 
 

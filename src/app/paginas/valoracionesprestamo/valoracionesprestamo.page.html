@@ -1,0 +1,51 @@
+<ion-content [fullscreen]="true">
+
+  <div class="cabecera">
+
+    <ion-icon name="arrow-back-outline" class="volver" (click)="volver()"></ion-icon>
+
+    <h2>Valorar a Laura Diaz</h2>
+
+  </div>
+
+  <div class="tarjeta-prenda">
+    <img src="assets/icon/Prestamoimagen(1).png">
+
+    <div class="datos-prenda">
+      <h2>Conjunto Camisa + Chandal Puma</h2>
+      <div class="detalle-prenda">
+        <p>Talla L</p>
+        <ion-button expand="block" class="boton-valoracion">Prestamo completado</ion-button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="bloque-estrellas">
+    <h2>¿Como calificarias el Prestamo?</h2>
+    <div class="estrellas">
+      <ion-icon name="star"></ion-icon>
+      <ion-icon name="star"></ion-icon>
+      <ion-icon name="star"></ion-icon>
+      <ion-icon name="star"></ion-icon>
+      <ion-icon name="star-outline"></ion-icon>
+    </div>
+
+  </div>
+
+
+
+  <div class="bloque-comentario">
+    <h2>Comentario(opcional)</h2>
+
+    <ion-textarea placeholder="Añade un comentario.. " rows="4"></ion-textarea>
+  </div>
+
+
+
+
+
+  <ion-button expand="block" class="boton-valoracion">Enviar valoracion</ion-button>
+
+</ion-content>
